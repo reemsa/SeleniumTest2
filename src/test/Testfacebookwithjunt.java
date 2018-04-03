@@ -21,7 +21,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Testfacebookwithjunt {
-	static WebDriver driver;
+	 WebDriver driver;
 	
 	@Before
 	public void setUp() throws Exception{
