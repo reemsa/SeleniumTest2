@@ -1,7 +1,8 @@
 package test;
 
 import java.util.concurrent.TimeUnit;
-
+import org.junit.jupiter.api.Test;
+import java.util.concurrent.TimeUnit;
 import org.junit.Before;
 import org.junit.After;
 import org.junit.Assert.*;
@@ -23,6 +24,7 @@ public class Testfacebookwithjunt {
 	public void tearDown() throws Exception{
 		
 	}
+	@Test
     public void test(){
         // TODO Auto-generated method stub
 
