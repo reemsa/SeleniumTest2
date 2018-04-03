@@ -1,7 +1,15 @@
 package test;
-
+//import org.junit.jupiter.api.Test;
 import java.util.concurrent.TimeUnit;
-import org.junit.jupiter.api.Test;
+import org.junit.Before;
+import org.junit.After;
+import org.junit.Test;
+import org.junit.Assert.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import java.util.concurrent.TimeUnit;
 import org.junit.Before;
 import org.junit.After;
@@ -18,6 +26,8 @@ public class Testfacebookwithjunt {
 	@Before
 	public void setUp() throws Exception{
 		System.setProperty("webdriver.gecko.driver", "c:\\geckodriver.exe");
+		driver=new FirefoxDriver();
+		//driver.get("http:\\www.facebook.com");
 
 	}
 	@After
@@ -31,10 +41,7 @@ public class Testfacebookwithjunt {
         //String expath = "D:\\Eclipse\\chromedriver_win32\\chromedriver.exe";
 
         
-    	driver=new FirefoxDriver();
-
-
-
+    	//driver=new FirefoxDriver();
         driver.get("http:\\www.facebook.com");
 
 
@@ -49,16 +56,5 @@ public class Testfacebookwithjunt {
 
         System.out.println("Login");
 
-
-
-
-        WebElement lstitem=driver.findElement(By.id("userNavigationLabel"));
-        lstitem.click();
-
-        driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
-
-        driver.findElement(By.partialLinkText("Log Out")).click();
-
-        System.out.println("Log out");
 }
 }
