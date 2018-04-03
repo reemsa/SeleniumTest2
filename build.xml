@@ -1,5 +1,5 @@
 <project default="compile">
-<property name="src.java.dir" location="./src/"/>
+<property name="src.java.dir" location="./src/najah/edu"/>
 <property name="result.dir" location="./target"/>
 <property name="result.javaclasses.dir" location="${result.dir}/classes"/>
 <path id="NecessaryLibraries">
@@ -33,7 +33,7 @@ includeantruntime="false">
 	<formatter type="xml" />
 <batchtest >
 <fileset dir="${result.javaclasses.dir}" >
-<include name="**/*Testfacebookwithjunt2.class"/>
+<include name="**/*Testfacebookwithjunt.class"/>
 </fileset>
 </batchtest>
 </junit>
