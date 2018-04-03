@@ -30,10 +30,7 @@ public class Testfacebookwithjunt {
 		//driver.get("http:\\www.facebook.com");
 
 	}
-	@After
-	public void tearDown() throws Exception{
-		
-	}
+	
 	@Test
     public void test(){
         // TODO Auto-generated method stub
@@ -57,4 +54,8 @@ public class Testfacebookwithjunt {
         System.out.println("Login");
 
 }
+	@After
+	public void tearDown() throws Exception{
+		
+	}
 }
